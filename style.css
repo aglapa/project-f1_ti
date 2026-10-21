@@ -1,5 +1,44 @@
 body
 {
     background-color: #1a1919;
-    color: #e76060;
+    color: black;
+    text-align: center;
+}
+a{
+    color: black;
+}
+header{
+    background-color: #535050;
+    width: 70%;
+    height: 55px;
+    float: left;
+}
+#logowanie{
+    background-color: #ab9292;
+    width: 30%;
+    height: 55px;
+    float: right;
+}
+nav{
+    background-color: #ea9f9f;
+    width: 50%;
+    height: 670px;
+    float: left;
+    align-content: center;
+}
+#info{
+    background-color: #db6a6a;
+    width: 50%;
+    height: 670px;
+    float: right;
+    align-content: center;
+}
+footer{
+    background-color: #dc3d3d;
+    width: 100%;
+    height: 39px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
