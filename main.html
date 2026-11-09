@@ -27,6 +27,20 @@
         </nav>
         <div id="info">
             <p style="color: white;">tutaj będzie info o weekendach z api</p>
+            <h1>My User List</h1>
+  <ul id="user-list"></ul>
+
+  <script>
+    // Ask the PHP file for the database info
+    fetch('api.php')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('user-list');
+        data.forEach(user => {
+          list.innerHTML += `<li>${user.name}</li>`;
+        });
+      });
+      </script>
         </div>
     </div>
     

@@ -1,8 +1,11 @@
-# Use the official lightweight Nginx image
-FROM nginx:alpine
+# Use the official PHP image with Apache web server built-in
+FROM php:8.2-apache
 
-# Copy your website files into the Nginx server directory
-COPY . /usr/share/nginx/html
+# Install the necessary PHP extensions to talk to MySQL
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Expose port 80 to the outside world
+# Copy your project files into Apache's public web directory
+COPY . /var/www/html/
+
+# Expose port 80 for web traffic
 EXPOSE 80
