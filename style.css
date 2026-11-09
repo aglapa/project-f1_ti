@@ -1,25 +1,26 @@
 body
 {
-    background-color: #1a1919;
-    color: black;
+    background-color: var(--bg-main, #1a1919);
+    color: var(--text-main, black);
     text-align: center;
 }
 a{
-    color: black;
+    color: var(--text-login);
 }
 header{
-    background-color: #F0F2F5;
+    background-color: var(--bg-header, #F0F2F5);
+    color: var(--text-header);
     width: 70%;
-    height: 55px;
+    height: 50px;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #logowanie{
-    background-color: #E10600;
+    background-color: var(--bg-login, #E10600);
     width: 30%;
-    height: 55px;
+    height: 50px;
     float: right;
 }
 #content-srodkowy{
@@ -28,7 +29,7 @@ header{
     width: 100%;
 }
 nav{
-    background-color: #121318;
+    background-color: var(--game-card, #121318);
     width: 50%;
     float: left;
     align-content: center;
@@ -37,7 +38,7 @@ nav{
     flex:1;
 }
 #info{
-    background-color: #1E2029;
+    background-color: var(--info-card, #1E2029);
     width: 50%;
     min-height: 670px;
     overflow: hidden;
@@ -46,7 +47,8 @@ nav{
     flex:1;
 }
 footer{
-    background-color: #F0F2F5;
+    background-color: var(--bg-footer, #F0F2F5);
+    color: var(--text-footer);
     width: 100%;
     height: 39px;
     clear: both;
@@ -56,6 +58,6 @@ footer{
 }
 img
 {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
 }

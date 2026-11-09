@@ -1,0 +1,99 @@
+:root, [data-theme="default"] {
+  --bg-main: #121318;
+  --bg-header: #1E2029;
+  --text-main: #F0F2F5;
+  --bg-login: #E10600;
+  --bg-footer: #9b0500;
+}
+
+[data-theme="ferrari"] {
+  --text-header: black;
+  --text-footer: black;
+  --text-login: white;
+  --bg-main: #121318;
+  --game-card: #AB0C0F;
+  --bg-header: #DADADA;
+  --info-card: #151415;
+  --bg-login: #114AC6;
+  --bg-footer: #E0B544;
+}
+
+[data-theme="mclaren"] {
+  --text-header: white;
+  --text-footer: white;
+  --text-login: white;
+  --bg-main: #020102;
+  --game-card: #DD6B20;
+  --bg-header: #196584;
+  --info-card: #151415;
+  --bg-login: #443E9C;
+  --bg-footer: #FCA058;
+}
+
+[data-theme="mercedes"] {
+  --text-header: white;
+  --text-footer: black;
+  --text-login: black;
+  --bg-main: #0C0B0C;
+  --game-card: #137E77;
+  --bg-header: #272627;
+  --info-card: #6D6A6C;
+  --bg-login: #31BFB5;
+  --bg-footer: #C6C6C6;
+}
+
+[data-theme="redbull"] {
+  --bg-main: #080D1A;
+  --bg-header: #121929;
+  --bg-login: #3671C6;
+  --bg-footer: #E10600;
+}
+
+[data-theme="astonmartin"] {
+  --bg-main: #07120E;
+  --bg-header: #10211A;
+  --bg-login: #005F41;
+  --bg-footer: #CEDC00;
+}
+
+[data-theme="alpine"] {
+  --bg-main: #0B1017;
+  --bg-header: #141C28;
+  --bg-login: #0090FF;
+  --bg-footer: #FF87BC;
+}
+
+[data-theme="williams"] {
+  --bg-main: #07101E;
+  --bg-header: #101B2E;
+  --bg-login: #00A0DE;
+  --bg-footer: #FFFFFF;
+}
+
+[data-theme="vcarb"] {
+  --bg-main: #0B1220;
+  --bg-header: #141E33;
+  --bg-login: #6692FF;
+  --bg-footer: #FFFFFF;
+}
+
+[data-theme="audi"] {
+  --bg-main: #0A140C;
+  --bg-header: #122116;
+  --bg-login: #52E252;
+  --bg-footer: #1E1E1E;
+}
+
+[data-theme="haas"] {
+  --bg-main: #141414;
+  --bg-header: #222222;
+  --bg-login: #E6002B;
+  --bg-footer: #B6BABD;
+}
+
+[data-theme="cadillac"] {
+  --bg-main: #0B0E14;
+  --bg-header: #151A24;
+  --bg-login: #C5A059;
+  --bg-footer: #004D98;
+}

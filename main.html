@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="motywy.css">
     <title>Strona główna</title>
 </head>
 <body>
     <header>
-        <h1>gry o f1</h1>
+        <h1>Gry o F1</h1>
     </header>
     <div id="logowanie">
-        <p><a href="login-screen.html">zaloguj sie (pusty href)</a></p>
+        <p><a href="login-screen.html">Zaloguj się (pusty href)</a></p>
     </div>
     <div id="content-srodkowy">
         <nav id="pole-gier">
-            <h1 style="color: white;">gierki (puste hrefy)</h1>
+            <p>Wybierz swój motyw:</p>
+            <select id="theme-select">
+                <option value="default">Default F1</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="mclaren">McLaren</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="redbull">Red Bull</option>
+                <option value="astonmartin">Aston Martin</option>
+                <option value="alpine">Alpine</option>
+                <option value="williams">Williams</option>
+                <option value="vcarb">RB (VCARB)</option>
+                <option value="audi">Audi</option>
+                <option value="haas">Haas</option>
+                <option value="cadillac">Cadillac</option>
+            </select>
+            <h1 style="color: white;">Tryby gier</h1>
             <div id="zgadnij-kierowce">
                 <p><a href="zgadnij-kierowce.html"><img src="images/zgadnij_kierowce.png" alt="Zgadnij kierowce"></a></p>
             </div>
@@ -31,8 +47,8 @@
     </div>
     
     <footer>
-        <p>stworzone jako zaliczenie projektu z technologii internetowych przez kacpra grabelus, bartosza gutmańskiego oraz adama glapę<br></p>
-        <p><a href="credits.html">Credits</a></p>
+        <p>Stworzone jako zaliczenie projektu z technologii internetowych przez Kacpra Grabelus, Bartosza Gutmańskiego oraz Adama Glapę.<br><a href="credits.html">Atrybutacje</a></p>
     </footer>
+    <script src="switcher.js"></script>
 </body>
 </html>
