@@ -5,31 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Strona główna</title>
+    <script>
+        async function test1() {
+            const key = tu_ma_byc_api_key;
+            const headers = {'x-api-key': key};
+
+            //// 1. find the event
+            //const events = await fetch(
+            //  'https://api.ocblacktop.com/v1/formula1/events?limit=1',
+            //  {headers},
+            //).then((r) => r.json());
+            //const event = events.data[0];
+            //console.log(event)
+            //console.log(event.id)
+
+            // 2. find the race session
+            //const sessions = await fetch(
+            //  `https://api.ocblacktop.com/v1/formula1/events/${event.id}/sessions`,
+            //  {headers},
+            //).then((r) => r.json());
+            //const race = sessions.find((s) => s.type === 'RACE') ?? sessions.at(-1);
+            const sessions = await fetch(
+              `https://api.ocblacktop.com/v1/formula1/events/723f663b-d7c2-4f4e-9de7-736901c10f09/sessions`,
+              {headers},
+            ).then((r) => r.json());
+            const race = sessions.find((s) => s.type === 'RACE') ?? sessions.at(-1);
+            console.log(sessions)
+            console.log(race)
+
+            // 3. get results
+            //const results = await fetch(
+            //  `https://api.ocblacktop.com/v1/formula1/events/${event.id}/sessions/${race.id}/results`,
+            //  {headers},
+            //).then((r) => r.json());
+            const results = await fetch(
+              `https://api.ocblacktop.com/v1/formula1/events/723f663b-d7c2-4f4e-9de7-736901c10f09/sessions/${race.id}/results`,
+              {headers},
+            ).then((r) => r.json());
+           for (const row of results) {
+                console.log(row.position, row.driver?.lastName, row.gap);
+                tekst = row.position + " " + row.driver?.lastName + " " + row.gap
+                logNaStronie(tekst);
+            }
+        }
+        function logNaStronie(wiadomostka) {
+            const kontener = document.getElementById('info');
+            const wpis = document.createElement('p');
+            wpis.textContent = wiadomostka;
+            kontener.appendChild(wpis);
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>gry o f1</h1>
     </header>
     <div id="logowanie">
-        <p><a href="login-screen.html" id="logowanie-link">zaloguj sie (pusty href)</a></p>
+        <p><a href="login-screen.html">zaloguj sie (pusty href)</a></p>
     </div>
-    <nav id="pole-gier">
-        <h1>gierki (puste hrefy)</h1>
-        <div id="zgadnij-kierowce">
-            <p><a href="zgadnij-kierowce.html"><img src="images/zgadnij_kierowce.png" alt="Zgadnij kierowce"></a></p>
+    <div id="content-srodkowy">
+        <nav id="pole-gier">
+            <h1 style="color: white;">gierki (puste hrefy)</h1>
+            <div id="zgadnij-kierowce">
+                <p><a href="zgadnij-kierowce.html"><img src="images/zgadnij_kierowce.png" alt="Zgadnij kierowce"></a></p>
+            </div>
+            <div id="connections">
+                <p><a href="connections.html"><img src="images/connections.png" alt="Connections"></a></p>
+            </div>
+            <div id="tory"><p><a href="tory.html"><img src="images/zgadnij_tor.png" alt="Zgadnij tor"></a></p></div>
+            <div id="cytaty"><p><a href="cytaty.html"><img src="images/cytaty.png" alt="Zgadnij cytat"></a></p></div>
+        </nav>
+        <div id="info">
+            <p style="color: white;">tutaj będzie info o weekendach z api</p>
+            <input type="button" value="test" onclick="test1()"/>
         </div>
-        <div id="connections">
-            <p><a href="connections.html"><img src="images/connections.png" alt="Connections"></a></p>
-        </div>
-        <div id="tory"><p><a href="tory.html"><img src="images/zgadnij_tor.png" alt="Zgadnij tor"></a></p></div>
-        <div id="cytaty"><p><a href="cytaty.html"><img src="images/cytaty.png" alt="Zgadnij cytat"></a></p></div>
-    </nav>
-    <div id="info">
-        <p>tutaj będzie info o weekendach z api</p>
     </div>
+    
     <footer>
-        <p>stworzone jako zaliczenie projektu z technologii internetowych przez kacpra grabelus, bartosza gutmańskiego oraz adama glapę<br></p>
-        <p><a href="credits.html">Credits</a></p>
+        <p>stworzone jako zaliczenie projektu z technologii internetowych przez kacpra grabelus, bartosza gutmańskiego oraz adama glapę<br><a href="credits.html">Credits</a></p>
     </footer>
 </body>
 </html>
