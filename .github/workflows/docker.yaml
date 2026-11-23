@@ -2,7 +2,7 @@ name: Budowanie i publikowanie obrazu Docker
 
 on:
   push:
-    branches: [main, develop, docker]
+    branches: [main, develop]
 
 permissions:
   contents: read

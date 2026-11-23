@@ -2,7 +2,7 @@ name: Publikowanie strony na GitHub Pages
 
 on:
   push:
-    branches: [main, develop, docker]
+    branches: [main, develop]
   workflow_dispatch:
 
 permissions:
