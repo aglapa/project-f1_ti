@@ -1,12 +1,14 @@
 :root, [data-theme="default"] {
   --bg-main: #121318;
   --bg-header: #1E2029;
+  --text-powrot: white;
   --text-main: #F0F2F5;
   --bg-login: #E10600;
   --bg-footer: #9b0500;
 }
 
 [data-theme="ferrari"] {
+  --text-powrot: black;
   --text-header: black;
   --text-footer: black;
   --text-login: white;
@@ -19,6 +21,7 @@
 }
 
 [data-theme="mclaren"] {
+  --text-powrot: white;
   --text-header: white;
   --text-footer: white;
   --text-login: white;
@@ -31,6 +34,7 @@
 }
 
 [data-theme="mercedes"] {
+  --text-powrot: white;
   --text-header: white;
   --text-footer: black;
   --text-login: black;
