@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: project-f1_ti
+    ports:
+      - "8080:80"
+    restart: unless-stopped
