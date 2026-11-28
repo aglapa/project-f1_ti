@@ -5,7 +5,7 @@ body
     text-align: center;
 }
 a{
-    color: black;
+    color: white;
 }
 header{
     background-color: #F0F2F5;
@@ -16,33 +16,20 @@ header{
     align-items: center;
     justify-content: center;
 }
-#logowanie{
+#back_to_main{
     background-color: #E10600;
     width: 30%;
     height: 55px;
     float: right;
 }
-#content-srodkowy{
-    float:left;
-    display: flex;
-    width: 100%;
-}
-nav{
+#glowny{
     background-color: #121318;
-    width: 50%;
+    color: white;
+    width: 100%;
     float: left;
     align-content: center;
     min-height: 670px;
     overflow: hidden;
-    flex:1;
-}
-#info{
-    background-color: #1E2029;
-    width: 50%;
-    min-height: 670px;
-    overflow: hidden;
-    float: right;
-    align-content: center;
     flex:1;
 }
 footer{
@@ -54,8 +41,8 @@ footer{
     align-items: center;
     justify-content: center;
 }
-img
-{
-    width: 50%;
-    height: 50%;
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
 }

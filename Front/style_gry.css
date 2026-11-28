@@ -1,0 +1,67 @@
+body
+{
+    background-color: var(--bg-main, #1a1919);
+    color: var(--text-main, black);
+    text-align: center;
+}
+a{
+    color: var(--text-login);
+}
+header{
+    background-color: var(--bg-header, #F0F2F5);
+    color: var(--text-header);
+    width: 70%;
+    height: 50px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#powrot{
+    color: var(--text-powrot);
+    text-decoration: none;
+}
+#logowanie{
+    background-color: var(--bg-login, #E10600);
+    width: 30%;
+    height: 50px;
+    float: right;
+}
+#content-srodkowy{
+    float:left;
+    display: flex;
+    width: 100%;
+}
+nav{
+    background-color: var(--game-card, #121318);
+    width: 100%;
+    float: left;
+    align-content: center;
+    min-height: 670px;
+    overflow: hidden;
+    flex:1;
+}
+#info{
+    background-color: var(--info-card, #1E2029);
+    width: 50%;
+    min-height: 670px;
+    overflow: hidden;
+    float: right;
+    align-content: center;
+    flex:1;
+}
+footer{
+    background-color: var(--bg-footer, #F0F2F5);
+    color: var(--text-footer);
+    width: 100%;
+    height: 39px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img
+{
+    width: 60%;
+    height: 60%;
+}
